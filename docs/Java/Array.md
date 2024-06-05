@@ -1,7 +1,7 @@
 ---
 sidebar_position: 5
 ---
-# Java数组
+# Java 数组
 
 ## 数组的定义
 - 数组的定义：
