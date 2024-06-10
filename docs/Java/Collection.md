@@ -15,14 +15,14 @@ sidebar_position: 14
 
 ## 容器的结构
 - 结构图
-  ![容器结构图](./img/collection/collection.png)
+  ![容器结构图](../../static/img/java/img/collection/collection.png)
 - 单例集合：将数据一个一个的进行存储
   - List接口：存储有序，允许重复，相当于动态数组
   - Set接口：存储无序，不可重复，类似于数学上集合的特性
 
-  ![单例集合](./img/collection/single-collection.png)
+  ![单例集合](../../static/img/java/img/collection/single-collection.png)
 - 双例集合：基于Key与Value的结构存储数据（类似于数学上的函数）
-  ![双例集合](./img/collection/double-collection.png)
+  ![双例集合](../../static/img/java/img/collection/double-collection.png)
 
 ## 单例集合
 ### Collection 接口
@@ -214,11 +214,11 @@ public class ArrayList_Test01 {
   - 通过分析 jdk1.8 ArrayList 的 `add()` 方法的底层源码
     - ArrayList 的扩容机制：延时初始化，以原来容量的1.5倍扩容
   
-  ![array-list-1](./img/collection/array-list-1.png)
-  ![array-list-2](./img/collection/array-list-2.png)
-  ![array-list-3](./img/collection/array-list-3.png)
-  ![array-list-4](./img/collection/array-list-4.png)
-  ![array-list-5](./img/collection/array-list-5.png)
+  ![array-list-1](../../static/img/java/img/collection/array-list-1.png)
+  ![array-list-2](../../static/img/java/img/collection/array-list-2.png)
+  ![array-list-3](../../static/img/java/img/collection/array-list-3.png)
+  ![array-list-4](../../static/img/java/img/collection/array-list-4.png)
+  ![array-list-5](../../static/img/java/img/collection/array-list-5.png)
   
 
 ### Vector 容器类
@@ -249,9 +249,9 @@ public class Vector_Test {
   - 通过分析 jdk1.8 Vector 容器的 `add()` 方法的部分底层源码
     - Vector 扩容机制：立即初始化，以原来容量的2倍进行扩容
 
-  ![vector-1](./img/collection/vector-1.png)
-  ![vector-2](./img/collection/vector-2.png)
-  ![vector-3](./img/collection/vector-3.png)
+  ![vector-1](../../static/img/java/img/collection/vector-1.png)
+  ![vector-2](../../static/img/java/img/collection/vector-2.png)
+  ![vector-3](../../static/img/java/img/collection/vector-3.png)
 
 ### Stack容器
 - Stack 栈容器,是 Vector 的一个子类,它实现了一个标准的后进先出(LIFO:Last In First Out) 的栈
@@ -357,7 +357,7 @@ public class Stack_Test {
   - 特点:查询效率低,增删效率高,线程不安全
   - 双向链表也叫双链表，是链表的一种，它的每个数据节点中都有两个指针，分别指向前个节点和后一个节点
     - 所以，从双向链表中的任意一个节点开始，都可以很方便地找到所有节点
-    ![双向链表](./img/collection/doubly-linked-list.png)
+    ![双向链表](../../static/img/java/img/collection/doubly-linked-list.png)
 - LinkedList 实现了 List 接口,所以 LinkedList 是具备 List 的存储特征的(有序,元素有重复)
 - 除了实现了 List 接口，LinkedList 类还有下列方法（非 List 标准，对象引用使用 LinkedList 类型），是专门用来操作双向链表存储结构的方法
 
@@ -437,15 +437,15 @@ public class LinkedList_Test {
 - LinkedList 底层源码分析（双向链表实现存储）
   - `Node<E>` 类实现双向链表存储结构
   
-    ![Node](./img/collection/node.png)
+    ![Node](../../static/img/java/img/collection/node.png)
 
   - LinkedList 的继承关系
 
-    ![继承关系](./img/collection/linked-list-implement.png)
+    ![继承关系](../../static/img/java/img/collection/linked-list-implement.png)
 
   - LinkedList 的成员属性
 
-    ![继承关系](./img/collection/linked-list-attributes.png)
+    ![继承关系](../../static/img/java/img/collection/linked-list-attributes.png)
     
 
 ### Set 接口
@@ -587,8 +587,8 @@ public class Users {
 - HashSet 中 `add()` 方法底层源码
   - 使用的是 HashMap 的 `put()` 方法添加元素,将元素添加到 HashMap 中的 key，而 value 值是默认的 Object 对象
   
-  ![hash-set-1](./img/collection/hash-set-1.png)
-  ![hash-set-2](./img/collection/hash-set-2.png)
+  ![hash-set-1](../../static/img/java/img/collection/hash-set-1.png)
+  ![hash-set-2](../../static/img/java/img/collection/hash-set-2.png)
 
 
 ### TreeSet 容器类
@@ -987,11 +987,11 @@ public class HashMap_Test {
   - 那么，我们能不能结合数组和链表的优点(即查询快，增删效率也高)呢?
     - 答案就是"哈希表”。哈希表的本质就是“数组+链表”
       
-    ![哈希表](./img/collection/hash-table.png)
+    ![哈希表](../../static/img/java/img/collection/hash-table.png)
 
 - HashMap 的成员变量
   
-  ![hash-map-1](./img/collection/hash-map-1.png)
+  ![hash-map-1](../../static/img/java/img/collection/hash-map-1.png)
 
   - `DEFAULT_INITIAL_CAPACITY`：默认数组部分的初始容量 16，必须是 2 的次幂
   - `MAXIMUM_CAPACITY`：数组部分的最大容量 2 的 30 次方
@@ -1004,16 +1004,16 @@ public class HashMap_Test {
 
 - HashMap 中存储元素的结点类型
   - 链表的结点类 Node
-    ![链表的结点类](./img/collection/hash-map-node.png)
+    ![链表的结点类](../../static/img/java/img/collection/hash-map-node.png)
 
   - 红黑树的结点类 TreeNode
     - TreeNode 类继承了 Node 类，以便于在 table（Node类型的数组）中存放链表结点和红黑树结点
-      ![红黑树的结点类](./img/collection/hash-map-tree-node.png)
+      ![红黑树的结点类](../../static/img/java/img/collection/hash-map-tree-node.png)
 
 - HashMap 数组初始化
   - 在 JDK1.8 的 HashMap 中对于数组的初始化采用的是延迟初始化方式
   - 通过 `resize` 方法实现初始化处理。`resize` 方法既实现数组初始化，也实现数组扩容处理
-    ![resize](./img/collection/hash-map-resize.png)
+    ![resize](../../static/img/java/img/collection/hash-map-resize.png)
 
 
 - HashMap 计算 hash 值
@@ -1030,9 +1030,9 @@ public class HashMap_Test {
        - 但是，这种算法由于使用了“除法”，效率低下。JDK后来改进了算法。首先约定数组长度必须为 2 的整数幂,这样采用位运算即可实现取余的效果:`hash值 =hashcode & (数组长度-1);`
 
   - 查看 `put` 方法源码
-    ![put方法](./img/collection/hash-map-put.png)
+    ![put方法](../../static/img/java/img/collection/hash-map-put.png)
   - hash 方法：高 16 位与低 16 位的异或运算
-    ![hash方法](./img/collection/hash-map-hash.png)
+    ![hash方法](../../static/img/java/img/collection/hash-map-hash.png)
 
 ### TreeMap 容器类
 - TreeMap 和 HashMap 同样实现了 Map 接口，所以，对于 API 的用法来说是没有别的
@@ -1193,7 +1193,7 @@ public class HashMap_Test {
   | void remove()      | 删除游标当前位置的元素，在执行完 next 后该操作只能执行一次 |
 
 - Iterator 对象的工作原理
-  ![iterator](./img/collection/iterator.png)
+  ![iterator](../../static/img/java/img/collection/iterator.png)
 
 - Iterator 容器的使用
   ```java

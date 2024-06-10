@@ -13,7 +13,7 @@ sidebar_position: 3
 - 当`+`运算符两侧的操作数中只要有一个是字符串（String）类型，系统会自动将另一个操作数转换为字符串（String）类型然后进行连接
 - 通过查看 String 部分源码，
   - 我们发现字符串内容全部存储到了`value[]` 数组中，而该数组是被 final 修饰的，即为常量类型（只能被赋值一次），这就是“不可变类型”的典型定义方式
-    ![String部分源码](img/string/string-source-code.png)
+    ![String部分源码](../../static/img/java/img/string/string-source-code.png)
 
 ### String类和常量池
 - 在 Java 内存分析中会经常提到常量池，常量池也分为以下几种
@@ -130,7 +130,7 @@ public class Test_02 {
 
 
 ### 字符串特性
-![字符串特性](img/string/string-future.png)
+![字符串特性](../../static/img/java/img/string/string-future.png)
 **结论:**
 
 - 常量与常量的拼接结果在常量池。且常量池中不会存在相同内容的常量。
@@ -144,7 +144,7 @@ public class Test_02 {
 - StringBuilder 和 StringBuffer 都继承了抽象类 AbstractStringBuilder
   - 查看 AbstractStringBuilder 部分源码，
     - 可以看到，`value[]` 数组并未被 final 修饰，所以 StringBuilder 和 StringBuffer 都是可变字符序列
-      ![AbstractStringBuilder部分源码](img/string/abstract-string-builder-source-code.png)
+      ![AbstractStringBuilder部分源码](../../static/img/java/img/string/abstract-string-builder-source-code.png)
 
 ```java
 /**

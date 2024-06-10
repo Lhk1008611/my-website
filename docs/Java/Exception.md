@@ -61,7 +61,7 @@ sidebar_position: 12
 - 所有异常对象都是派生于 Throwable 类的一个实例。如果内置的异常类不能够满足需要，还可以创建自己的异常类
 - Java 对异常进行了分类，不同类型的异常分别用不同的 Java 类表示，所有异常的根类为 `java.lang.Throwable`,Throwable 下面又派生了两个子类: Error 和 Exception
 - Java 异常类的层次结构
-  ![Java 异常类的层次结构](./img/exception/exception.png)
+  ![Java 异常类的层次结构](../../static/img/java/img/exception/exception.png)
 
 ### 一、Error
 - Error 是程序无法处理的错误，表示运行应用程序中较严重问题，大多数错误与代码编写者执行的操作无关，而表示代码运行时JVM(Java 虚拟机)出现的问题
@@ -86,11 +86,11 @@ sidebar_position: 12
 - 例如：
   1. `ArithmeticException` 异常：
      - 试图除以0
-       ![ArithmeticException](./img/exception/arithmetic-exception.png)
+       ![ArithmeticException](../../static/img/java/img/exception/arithmetic-exception.png)
 
   2. `NullPointerException` (空指针异常)
      - 当程序访问一个空对象的成员变量或方法,或者访问一个空数组的成员时会发生空指针异常(NullPointerException)
-       ![NullPointerException](./img/exception/null-pointer-exception.png)
+       ![NullPointerException](../../static/img/java/img/exception/null-pointer-exception.png)
      - 异常代码
        ```java
           public class Test_NullPointerException {
@@ -103,7 +103,7 @@ sidebar_position: 12
        
   3. `ClassCastException` 异常
      - 在引用数据类型转换时，有可能发生类型转换异常(ClassCastException)
-       ![ClassCastException](./img/exception/class-cast-exception.png)
+       ![ClassCastException](../../static/img/java/img/exception/class-cast-exception.png)
      - 异常代码
        ```java
           public class Test_ClasscastException {
@@ -128,7 +128,7 @@ sidebar_position: 12
        
   4. `ArrayIndexOutOfBoundsException` 异常
      - 当程序访问一个数组的某个元素时，如果这个元素的索引超出了 `0~数组长度-1` 这个范围，则会出现数组下标越界异常(ArrayIndexOutOfBoundsException)
-       ![ArrayIndexOutOfBoundsException](./img/exception/array-index-out-of-bounds-exception.png)
+       ![ArrayIndexOutOfBoundsException](../../static/img/java/img/exception/array-index-out-of-bounds-exception.png)
      - 异常代码
        ```java
           public class Test_ArrayIndexOutOfBoundsException {
@@ -142,7 +142,7 @@ sidebar_position: 12
        
   5. `NumberFormatException` 异常
      - 在使用包装类将字符串转换成基本数据类型时，如果字符串的格式不正确，则会出现数字格式异常(NumberFormatException)
-       ![NumberFormatException](./img/exception/number-format-exception.png)
+       ![NumberFormatException](../../static/img/java/img/exception/number-format-exception.png)
      - 异常代码
        ```java
           public class Test_NumberFormatException {
@@ -158,7 +158,7 @@ sidebar_position: 12
   - 如 `IOException`、`SQLException`等以及用户自定义的 Exception 异常。这类异常在编译时就必须做出处理，否则无法通过编译
 - 例：
   此处 File 对象 f 调用 `createNewFile()` 方法需要对 `IOException` 进行处理
-  ![IOException](./img/exception/io-exception.png)
+  ![IOException](../../static/img/java/img/exception/io-exception.png)
 - 两种处理方式：
   - 使用`try/catch`捕获异常
   - 使用`throw`声明异常
@@ -170,7 +170,7 @@ sidebar_position: 12
   - finally 所指定的代码都要被执行
   - catch 语句可有多条，finally 语句最多只能有一条，根据自己的需要可有可无
   - 其结构如图所示
-    ![try-catch-finally](./img/exception/try-catch-finally.png)
+    ![try-catch-finally](../../static/img/java/img/exception/try-catch-finally.png)
 
 #### try
 - try 语句指定了一段代码，该段代码就是异常捕获并处理的范围

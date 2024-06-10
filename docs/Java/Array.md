@@ -135,7 +135,7 @@ public class Array_Util_Class {
 - 可以有二维、三维、甚至更多维数组，但是实际开发中用的非常少,最多到二维数组
 - 在实际开发中，一般使用容器更多
 - 内存分析图
-  ![内存分析图](./img/array.png)
+  ![内存分析图](../../static/img/java/img/array.png)
 - 二维数组的声明
     ```java
     public class Array_Tow {

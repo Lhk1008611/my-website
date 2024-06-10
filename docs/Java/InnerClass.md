@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Java 内部类
 1. 内部类介绍
-![内部类介绍](./img/inner-class/introduce.png)
+![内部类介绍](../../static/img/java/img/inner-class/introduce.png)
    - 内部类可以使用 public、private、protected、default、static 修饰符修饰，而外部顶级类只能使用 public、default 修饰符修饰
    - 内部类只是一个编译时的概念，编译成功后，就会成为两个不同的类，内部类会成为外部类的成员，并且会生成一个外部类对象，通过外部类对象调用内部类对象
    - 对于一个名为 Outer 的外部类和其内部定义的内部类 Inner，编译后，会生成两个类，一个是 Outter.class，一个是 Outter$Inner.class

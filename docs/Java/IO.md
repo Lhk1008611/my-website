@@ -28,7 +28,7 @@ sidebar_position: 16
 - 数据源分为:源设备、目标设备
   - 源设备:为程序提供数据，一般对应输入流
   - 目标设备:程序数据的目的地，一般对应输出流
-  ![Data Source](./img/io/data-source.png)
+  ![Data Source](../../static/img/java/img/io/data-source.png)
 
 ## 流(Stream)的概念
 - 流是一个抽象、动态的概念，是一连串连续动态的数据集合
@@ -37,7 +37,7 @@ sidebar_position: 16
   - 对于输出流而言，目标数据源就是目的地(dest)
     - 我们通过流(A Stream)将程序(Program)中的数据(information)输送到目的数据源(dest)中
 
-  ![Stream](./img/io/stream.png)
+  ![Stream](../../static/img/java/img/io/stream.png)
 
 - 注意：输入/输出流的划分是相对程序而言的，并不是相对数据源
 
@@ -99,11 +99,11 @@ sidebar_position: 16
   - 处理流:不直接连接到数据源或目的地，是"处理流的流",也叫包装流
     - 通过对其他流的处理提高程序的性能，如 BufferedInputStream、BufferedReader 等
 
-  ![流的流向](./img/io/stream-direction.png)
+  ![流的流向](../../static/img/java/img/io/stream-direction.png)
 
 ## Java 中 IO 流类的体系
 - 常用 IO 流类的体系
-  ![IO 流类体系](./img/io/stream-system.png)
+  ![IO 流类体系](../../static/img/java/img/io/stream-system.png)
 
   | 流名                                       | 作用                                                         |
   | ------------------------------------------ | ------------------------------------------------------------ |

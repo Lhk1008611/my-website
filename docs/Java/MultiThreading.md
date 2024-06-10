@@ -46,7 +46,7 @@ sidebar_position: 17
     3. 改善程序结构。将既长又复杂的进程分为多个线程，独立运行，利于理解和修改
 
 - JVM 内存结构图
-  ![JVM 内存结构图](./img/multi-threading/jvm-memory-structure.png)
+  ![JVM 内存结构图](../../static/img/java/img/multi-threading/jvm-memory-structure.png)
 
 ### 线程的调度
 - 线程调度策略
@@ -216,7 +216,7 @@ sidebar_position: 17
     - **阻塞**:在某种特殊情况下，被人为挂起或执行输入输出操作时，让出 CPU 并临时中止自己的执行，进入阻塞状态
     - **死亡**:线程完成了它的全部工作或线程被提前强制性地中止或出现异常导致结束
   
-  ![线程的生命周期](./img/multi-threading/thread-life-cycle.png)
+  ![线程的生命周期](../../static/img/java/img/multi-threading/thread-life-cycle.png)
 
 
 ### 线程的创建和使用

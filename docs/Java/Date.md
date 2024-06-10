@@ -6,7 +6,7 @@ sidebar_position: 8
 - 在计算机世界，我们把 `1970年1月1日 00:00:00` 定为基准时间，每个度量单位是毫秒(1 秒的千分之一)
 - 我们用 long 类型的变量来表示时间，从基准时间往前几亿年，往后几亿年都能表示
 - 如果想获得现在时刻的"时刻数值"，可以使用:`long now = System.curentTimeMillis();` 这个"时刻数值"是所有时间类的核心值，年月日都是根据这个"数值"计算出来的。我们工作学习涉及的时间相关类有如下这些:
-  ![时间相关类](./img/date/date.png)
+  ![时间相关类](../../static/img/java/img/date/date.png)
 
 ## Date 时间类（java.util.Date）
 - 在标准 Java 类库中包含一个 Date 类。它的对象表示一个特定的瞬间，精确到毫秒
@@ -47,7 +47,7 @@ public class DateClass {
   - 把时间对象转化成指定格式的字符串，反之，把指定格式的字符串转化成时间对象
   - DateFormat 是一个抽象类，一般使用它的实现类子类 SimpleDateFormat 
 - 格式化字符的含义
-  ![格式化字符的含义](./img/date/date-format.png)
+  ![格式化字符的含义](../../static/img/java/img/date/date-format.png)
   ```java
   /**
   * 测试时间格式化类

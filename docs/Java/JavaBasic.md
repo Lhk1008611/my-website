@@ -47,7 +47,7 @@ sidebar_position: 1
   }
   ```
 ## 运算符优先级
-![运算符优先级](./img/priority.png)
+![运算符优先级](../../static/img/java/img/priority.png)
 - 逻辑与、或、非开发中比较常用需熟悉其优先级
   - ! > && > ||
   - 例如：`a || b && c` 等价于 `a || (b && c)`
