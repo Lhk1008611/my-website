@@ -1,0 +1,42 @@
+name: Build and Deploy Frontend
+
+on:
+  push:
+    branches:
+      - main # 触发动作的分支，根据实际情况修改
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Source Code
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+
+    - name: Install Dependencies & Build
+      run: |
+        npm ci
+        npm run build # 假设这是构建前端项目的npm脚本命令
+
+    - name: Configure SSH Keys
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.SSH_Key }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+    - name: Push to Another Repository
+      run: |
+        git config --global user.name "${{ github.actor }}"
+        git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+        git clone --branch gh-pages git@github.com:Lhk1008611/Lhk1008611.github.io.git build
+        cp -r build/* build/ # 假设'dist'是构建产物的输出目录
+        cd build
+        git add .
+        git commit -m "Automatically deploy from ${GITHUB_SHA} [skip ci]"
+        git push
+
