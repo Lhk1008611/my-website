@@ -5,11 +5,11 @@ sidebar_position: 1
 # Linux 目录结构
 - Linux 的文件系统是**采用级层式的树状目录结构**，在此结构中的最上层是根目录 `/`，然后在此目录下再创建其他的目录
 
-  ![Linux目录结构](../../static/img/Linux/Linux-directory-structure-1.png)
+  ![Linux目录结构](../../static/img/linux/linux-directory-structure-1.png)
 
 - 在 Linux 世界中，一切皆为文件
 
-  ![Linux目录结构](../../static/img/Linux/Linux-directory-structure-2.png)
+  ![Linux目录结构](../../static/img/linux/linux-directory-structure-2.png)
 
 ## 目录介绍
 - `/bin`

@@ -8,6 +8,10 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    env:
+      # 使用GitHub Actions的 secrets 特性来安全存储PAT
+      GH_PAT: ${{ secrets.SECRET_TOKEN }}
+
     steps:
     - name: Checkout Source Code
       uses: actions/checkout@v3
@@ -22,20 +26,14 @@ jobs:
         npm ci
         npm run build # 假设这是构建前端项目的npm脚本命令
 
-    - name: Configure SSH Keys
+    - name: Push to Another Repository With Token
       run: |
-        mkdir -p ~/.ssh
-        echo "${{ secrets.SSH_Key }}" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-        ssh-keyscan github.com >> ~/.ssh/known_hosts
-
-    - name: Push to Another Repository
-      run: |
+        git config --global url."https://${{ env.GH_PAT }}@github.com/".insteadOf https://github.com/
         git config --global user.name "${{ github.actor }}"
         git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-        git clone --branch gh-pages git@github.com:Lhk1008611/Lhk1008611.github.io.git build
-        cp -r build/* build/ # 假设'dist'是构建产物的输出目录
-        cd build
+        git clone --branch main https://github.com/Lhk1008611/Lhk1008611.github.io.git dest
+        cp -r build/* dest/ # 假设'build'是构建产物的输出目录
+        cd dest
         git add .
         git commit -m "Automatically deploy from ${GITHUB_SHA} [skip ci]"
         git push
