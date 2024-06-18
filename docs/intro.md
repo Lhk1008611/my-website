@@ -10,7 +10,7 @@ sidebar_position: 1
 ### 邵阳学院 - 本科 - 信息与计算科学     （2018.09 - 2022.06）
 
 
-**Github：** [github.com/Lhk1008611](https://github.com/Lhk1008611)   |  **个人博客：** [lhk1008611.github.io](https://lhk1008611.github.io/)
+**Github：** [github.com/Lhk1008611](https://github.com/Lhk1008611)   |  **个人博客：** [lhk1008611.github.io](https://lhk1008611.github.io/)   |  **CSDN：** [https://blog.csdn.net/qq_44733777](https://blog.csdn.net/qq_44733777)
 
 ## 专业技能
 
