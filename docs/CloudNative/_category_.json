@@ -1,0 +1,8 @@
+{
+  "label": "Cloud Native",
+  "position": 10,
+  "link": {
+    "type": "generated-index",
+    "description": "Cloud Native 笔记"
+  }
+}
