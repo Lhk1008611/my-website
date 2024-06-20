@@ -25,7 +25,7 @@ sidebar_position: 3
 
 ### 2. 组件架构
 
-![](.\image\屏幕截图 2023-10-22 130534.png)
+![components](../../static/img/cloud_native/components.png)
 
 - 各组件解释：
   - [Kubernetes 组件 | Kubernetes](https://kubernetes.io/zh-cn/docs/concepts/overview/components/)
