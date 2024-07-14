@@ -30,7 +30,9 @@ tar zxvf redis-6.2.6.tar.gz
 [root@Lhk001 redis-6.2.6]# make
 ```
 ![make](../../static/img/redis/make-1.png)
+
 编译完成
+
 ![make](../../static/img/redis/make-2.png)
 
 ## 5.安装Redis
