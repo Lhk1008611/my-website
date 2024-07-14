@@ -1,4 +1,6 @@
-﻿
+﻿---
+sidebar_position: 1
+---
 # Redis 的安装及启动
 
 ## 1.将 Redis 安装包移动到 Linux 中
