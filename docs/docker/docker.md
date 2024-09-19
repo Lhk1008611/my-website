@@ -1,4 +1,20 @@
 # docker
+**docker 安装**
+- 参考： https://www.runoob.com/docker/centos-docker-install.html
+- 注意配置镜像源
+
+  - 配置文件：`/etc/docker/daemon.json`
+    ```json
+    {
+    "registry-mirrors": [
+        "https://registry.docker-cn.com",
+        "https://docker.mirrors.ustc.edu.cn",
+        "https://hub-mirror.c.163.com",
+        "https://mirror.baidubce.com",
+        "https://ccr.ccs.tencentyun.com"
+    ]
+    }
+    ```
 
 ## 一、docker 常用命令
 
