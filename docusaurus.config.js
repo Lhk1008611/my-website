@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'HankLay 的个人主页',
-  tagline: '一个练习时长两年半的程序猿',
+  tagline: '持续输出50+技术博客 · 自驱型工程师 · 乐于分享',
   url: 'https://lhk1008611.github.io/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -60,7 +60,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'Php/PHP',
             label: '文档',
             position: 'left'
           },
